@@ -102,7 +102,7 @@ function renderFrame(steps) {
         //	elems[i]['y'] += elems[i]['moveY'] * s;
         // ❓ - was ist "s"? 😭 --> Ich geh mal von "global speed" aus.. oder doch schritte? hmm :(
         punkt.pos.x += punkt.mov.x * steps;
-        punkt.pos.y += -punkt.mov.y * steps;
+        punkt.pos.y -= punkt.mov.y * steps;
     });
     // Debug stuff!
     writeGlobalDebugInfos();
